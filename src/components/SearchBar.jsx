@@ -5,9 +5,25 @@ export default function SearchBar() {
 
     return (
 
-        <div className="SearchBar">
-
+        <div className="container-fluid">
+            <div className="row">
+                <div className="col-12 p-5 text-center">
+                    <form className='container'>
+                        <div className="row">
+                            <div className="col-12 col-md-6 m-auto">
+                                <input
+                                    className="form-control form-control-lg mb-5"
+                                    type="text"
+                                    placeholder="Search your favorite songs..."
+                                    aria-label="search songs from spotify" />
+                                <button className='btn bg-primary selectable border rounded-pill fs-3 px-5 text-light'>Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
+
     )
 
 }
