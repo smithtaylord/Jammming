@@ -9,6 +9,7 @@ class ObservableAppState {
   account = null
   songsFromSpotify = []
   myPlaylist = []
+  accessToken = null
 
 
   constructor() {

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/scss/components/SearchBar.scss'
+import { spotifyService } from '../services/SpotifyService.js';
 
 export default function SearchBar() {
 
@@ -16,8 +17,10 @@ export default function SearchBar() {
                                     type="text"
                                     placeholder="Search your favorite songs..."
                                     aria-label="search songs from spotify" />
-                                <button className='btn bg-primary selectable border rounded-pill fs-3 px-5 text-light'>Search</button>
                             </div>
+                            <button
+                                onClick={spotifyService.getToken()}
+                                className='btn bg-primary selectable border rounded-pill fs-3 px-5 text-light'>Search</button>
                         </div>
                     </form>
                 </div>
