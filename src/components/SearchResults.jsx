@@ -8,7 +8,10 @@ export default function SearchResults() {
 
         <div className="SearchResults main-bg rounded elevation-5">
             <div className='p-3'>
-                <h2 className='text-light text-shadow mb-5'>Results</h2>
+                <h1 className='text-light text-shadow mb-3 px-3'>Results</h1>
+                <Track />
+                <Track />
+                <Track />
                 <Track />
             </div>
         </div >

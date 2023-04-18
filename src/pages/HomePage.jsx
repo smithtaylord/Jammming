@@ -10,12 +10,12 @@ export default function HomePage() {
   return (
     <div>
       <SearchBar />
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
-          <div className="col-7">
+          <div className="col-6 offset-1">
             <SearchResults />
           </div>
-          <div className="col-5">
+          <div className="col-4">
             <Playlist />
           </div>
         </div>

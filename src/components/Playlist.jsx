@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/scss/components/Playlist.scss'
+import Track from './Track.jsx';
 
 export default function Playlist() {
 
@@ -7,7 +8,15 @@ export default function Playlist() {
 
         <div className="Playlist main-bg rounded elevation-5">
             <div className='p-3'>
-                <h2 className='text-light text-shadow'>Playlist</h2>
+                <h1 className='text-light text-shadow mb-3 px-3'>Playlist</h1>
+                <Track />
+                <Track />
+                <Track />
+                <Track />
+                <div className='text-center mt-4 mb-2'>
+                    <button className='btn bg-primary selectable border rounded-pill fs-3 px-5 text-light'>
+                        Add to Spotify</button>
+                </div>
             </div>
         </div >
     )
