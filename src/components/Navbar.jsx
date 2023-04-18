@@ -25,9 +25,9 @@ export function Navbar() {
       <div className="collapse navbar-collapse" id="navbarText">
         <ul className="navbar-nav me-auto">
           <li>
-            <Link to={'About'} className="btn text-success lighten-30 selectable text-uppercase">
+            {/* <Link to={'About'} className="btn text-success lighten-30 selectable text-uppercase">
               About
-            </Link>
+            </Link> */}
           </li>
         </ul>
         <Login />
