@@ -7,6 +7,7 @@ import ErrorPage from './pages/ErrorPage.jsx';
 import HomePage from './pages/HomePage.jsx';
 import { accountService } from './services/AccountService.js';
 import AuthGuard from './utils/AuthGuard.jsx';
+import SpotifyCallbackPage from './pages/SpotifyCallbackPage.jsx'
 
 
 export const router = createHashRouter([
@@ -23,6 +24,10 @@ export const router = createHashRouter([
         path: "about",
         element: <AboutPage />,
       },
+      // {
+      //   path: "spotify-callback",
+      //   element: <SpotifyCallbackPage />,
+      // },
       {
         path: "account",
         loader: accountService.getAccount,

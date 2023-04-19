@@ -5,3 +5,8 @@ export const api = Axios.create({
   timeout: 8000
 })
 api.defaults.headers.authorization = JSON.parse(localStorage.getItem('user-token'))
+
+export const spotifyApi = Axios.create({
+  baseURL: 'https://accounts.spotify.com/api',
+  timeout: 8000
+})

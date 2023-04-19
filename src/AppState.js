@@ -10,6 +10,7 @@ class ObservableAppState {
   songsFromSpotify = []
   myPlaylist = []
   accessToken = null
+  tokenExpiration = 0
 
 
   constructor() {
