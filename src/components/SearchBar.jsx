@@ -7,7 +7,7 @@ export default function SearchBar() {
     const getAccessToken = async (e) => {
         e.preventDefault()
         try {
-            await spotifyService.getToken()
+            await spotifyService.searchTracks('Cake')
         }
         catch (error) {
             Pop.error(error);
