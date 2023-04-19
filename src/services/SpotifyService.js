@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js"
+import { Track } from "../models/Track.js";
 import { logger } from "../utils/Logger.js";
 import { accessToken, spotifyApi } from "./AxiosService.js";
 
@@ -25,14 +26,19 @@ class SpotifyService {
     }
 
     async searchTracks(query) {
-        await this.getToken()
+        if (!AppState.accessToken) {
+            await this.getToken()
+        }
+
         const res = await spotifyApi.get(`/search?type=track&q=${query}`,
             {
                 headers: {
                     Authorization: `Bearer ${AppState.accessToken}`
                 }
             })
-        logger.log(res.data, '[search results]')
+        logger.log(res, '[search results]')
+        AppState.songsFromSpotify = res.data.tracks.map(t => new Track(t))
+        logger.log(AppState.songsFromSpotify)
     }
 
 }
