@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import '../assets/scss/pages/HomePage.scss'
 import SearchBar from "../components/SearchBar.jsx";
 import SearchResults from "../components/SearchResults.jsx";
@@ -7,8 +7,7 @@ import { AppState } from "../AppState.js";
 import { observer } from 'mobx-react-lite';
 
 
-function componentName() {
-
+function HomePage() {
   return (
     <div>
       <SearchBar />
@@ -32,4 +31,4 @@ function componentName() {
 
 
 }
-export default observer(componentName)
+export default observer(HomePage)

@@ -5,7 +5,7 @@ import Tracklist from './Tracklist.jsx';
 import { AppState } from '../AppState.js';
 import { observer } from 'mobx-react';
 
-function Playlist() {
+export default function Playlist({ tracks }) {
     const playlist = AppState.playlist
 
     return (
@@ -14,8 +14,8 @@ function Playlist() {
             <div className='p-3'>
                 <h1 className='text-light text-shadow mb-3 px-3'>Playlist</h1>
                 {
-                    playlist.length > 0 &&
-                    <Tracklist tracks={playlist} />
+                    tracks.length > 0 &&
+                    <Tracklist tracks={tracks} />
                 }
                 <div className='text-center mt-4 mb-2'>
                     <button className='btn bg-primary selectable border rounded-pill fs-3 px-5 text-light'>
@@ -26,4 +26,4 @@ function Playlist() {
     )
 
 }
-export default observer(Playlist);
+// export default observer(Playlist);
