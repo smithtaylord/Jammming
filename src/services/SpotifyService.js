@@ -43,7 +43,7 @@ class SpotifyService {
     }
 
     addToPlaylist(track) {
-
+        track.inPlaylist = true
         const index = AppState.searchResults.findIndex(t => t.id == track.id)
         // NOTE this is how you delete something from a list and keep it observable.
         const updatedSearchResults = [
@@ -55,6 +55,15 @@ class SpotifyService {
         // logger.log(track)
         // logger.log(AppState.playlist)
         // logger.log(AppState.searchResults, '[search results]')
+    }
+
+    removeFromPlaylist(track) {
+        const index = AppState.playlist.findIndex(t => t.id == track.id)
+        const updatedPlaylist = [
+            ...AppState.playlist.slice(0, index),
+            ...AppState.playlist.slice(index + 1)
+        ]
+        AppState.playlist = updatedPlaylist
     }
 
 }
