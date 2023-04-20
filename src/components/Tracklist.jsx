@@ -4,12 +4,12 @@ import '../assets/scss/components/Tracklist.scss'
 import Track from './Track.jsx';
 import { AppState } from '../AppState.js';
 
-export default function Tracklist({ searchResults }) {
+export default function Tracklist({ tracks }) {
 
     return (
 
         <div className="Tracklist">
-            {searchResults.map(track => {
+            {tracks && tracks.map(track => {
                 return (
                     <div key={track.id}>
                         <Track track={track} />

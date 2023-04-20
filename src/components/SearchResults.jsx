@@ -11,7 +11,10 @@ export default function SearchResults() {
         <div className="SearchResults main-bg rounded elevation-5">
             <div className='p-3'>
                 <h1 className='text-light text-shadow mb-3 px-3'>Results</h1>
-                <Tracklist searchResults={AppState.searchResults} />
+                {
+                    AppState.searchResults.length > 0 &&
+                    <Tracklist tracks={AppState.searchResults} />
+                }
             </div>
         </div >
     )
