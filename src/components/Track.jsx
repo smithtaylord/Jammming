@@ -8,8 +8,7 @@ import { spotifyService } from '../services/SpotifyService.js';
 export default function Track({ track }) {
     // const track = props.track
     function addToPlaylist() {
-        const id = track?.id
-        spotifyService.addToPlaylist(id)
+        spotifyService.addToPlaylist(track)
 
     }
 

@@ -41,8 +41,14 @@ class SpotifyService {
         // logger.log(AppState.searchResults)
     }
 
-    addToPlaylist(id) {
-        logger.log(id)
+    addToPlaylist(track) {
+
+        const index = AppState.searchResults.findIndex(t => t.id == track.id)
+        AppState.searchResults.splice(index, 1)
+        logger.log(track)
+        AppState.playlist.push(track)
+        logger.log(AppState.playlist)
+        logger.log(AppState.searchResults, '[search results]')
     }
 
 }

@@ -9,13 +9,7 @@ class ObservableAppState {
   account = null
   // /** @type {import('./models/Track.js').Track | []} */
   searchResults = []
-  playlist = [{
-    id: '123',
-    name: 'test name',
-    artist: 'test artist',
-    album: 'test album'
-
-  }]
+  playlist = []
   accessToken = null
   tokenExpiration = 0
 

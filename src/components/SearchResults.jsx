@@ -4,7 +4,7 @@ import Tracklist from './Tracklist.jsx';
 import { AppState } from '../AppState.js';
 
 
-export default function SearchResults() {
+export default function SearchResults({ tracks }) {
 
     return (
 
@@ -13,7 +13,7 @@ export default function SearchResults() {
                 <h1 className='text-light text-shadow mb-3 px-3'>Results</h1>
                 {
                     AppState.searchResults.length > 0 &&
-                    <Tracklist tracks={AppState.searchResults} />
+                    <Tracklist tracks={tracks} />
                 }
             </div>
         </div >

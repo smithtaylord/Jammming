@@ -17,10 +17,12 @@ function componentName() {
           <div className="col-6 offset-1">
             <SearchResults
               // @ts-ignore
-              searchResults={AppState.searchResults} />
+              tracks={AppState.searchResults} />
           </div>
           <div className="col-4">
-            <Playlist />
+            <Playlist
+              // @ts-ignore
+              tracks={AppState.playlist} />
           </div>
         </div>
       </div>
