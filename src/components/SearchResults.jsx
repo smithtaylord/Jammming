@@ -1,18 +1,17 @@
 import React from 'react';
 import '../assets/scss/components/SearchResults.scss'
-import Track from '../components/Track.jsx'
+import Tracklist from './Tracklist.jsx';
+import { AppState } from '../AppState.js';
 
-export default function SearchResults() {
+
+export default function SearchResults(props) {
 
     return (
 
         <div className="SearchResults main-bg rounded elevation-5">
             <div className='p-3'>
                 <h1 className='text-light text-shadow mb-3 px-3'>Results</h1>
-                <Track />
-                <Track />
-                <Track />
-                <Track />
+                <Tracklist tracks={props.searchResults} />
             </div>
         </div >
     )

@@ -7,7 +7,8 @@ class ObservableAppState {
   user = null
   /** @type {import('./models/Account.js').Account | null} */
   account = null
-  searchResults = {}
+  // /** @type {import('./models/Track.js').Track | []} */
+  searchResults = []
   myPlaylist = []
   accessToken = null
   tokenExpiration = 0
