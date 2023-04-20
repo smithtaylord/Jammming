@@ -36,9 +36,9 @@ class SpotifyService {
                     Authorization: `Bearer ${AppState.accessToken}`
                 }
             })
-        logger.log(res, '[search results]')
-        AppState.songsFromSpotify = res.data.tracks.map(t => new Track(t))
-        logger.log(AppState.songsFromSpotify)
+        logger.log(res.data.tracks.items, '[search results]')
+        AppState.searchResults = res.data.tracks.items.map(t => new Track(t))
+        logger.log(AppState.searchResults)
     }
 
 }

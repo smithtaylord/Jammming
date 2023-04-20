@@ -7,7 +7,7 @@ class ObservableAppState {
   user = null
   /** @type {import('./models/Account.js').Account | null} */
   account = null
-  songsFromSpotify = {}
+  searchResults = {}
   myPlaylist = []
   accessToken = null
   tokenExpiration = 0
