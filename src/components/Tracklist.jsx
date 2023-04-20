@@ -1,18 +1,19 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import '../assets/scss/components/Tracklist.scss'
 import Track from './Track.jsx';
 import { AppState } from '../AppState.js';
 
-export default function Tracklist(props) {
+export default function Tracklist({ searchResults }) {
 
     return (
 
         <div className="Tracklist">
-            {props.tracks.map(track => {
+            {searchResults.map(track => {
                 return (
-                    <Track
-                        key={track.id}
-                        track={track} />
+                    <div key={track.id}>
+                        <Track track={track} />
+                    </div>
                 )
             })}
         </div>

@@ -15,7 +15,9 @@ function componentName() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-6 offset-1">
-            <SearchResults searchResults={AppState.searchResults} />
+            <SearchResults
+              // @ts-ignore
+              searchResults={AppState.searchResults} />
           </div>
           <div className="col-4">
             <Playlist />
