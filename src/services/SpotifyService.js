@@ -41,6 +41,10 @@ class SpotifyService {
         // logger.log(AppState.searchResults)
     }
 
+    addToPlaylist(id) {
+        logger.log(id)
+    }
+
 }
 
 export const spotifyService = new SpotifyService()

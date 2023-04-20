@@ -3,9 +3,15 @@ import React from 'react';
 import '../assets/scss/components/Track.scss'
 import { mdiPlus } from '@mdi/js';
 import Icon from '@mdi/react'
+import { spotifyService } from '../services/SpotifyService.js';
 
 export default function Track({ track }) {
     // const track = props.track
+    function addToPlaylist() {
+        const id = track?.id
+        spotifyService.addToPlaylist(id)
+
+    }
 
     return (
 
@@ -15,7 +21,9 @@ export default function Track({ track }) {
                 <span className='text-secondary fs-5'>{track?.artist} | {track?.album}</span>
             </div>
             <div className='px-3'>
-                <div className='selectable'>
+                <div
+                    onClick={addToPlaylist}
+                    className='selectable'>
                     <Icon path={mdiPlus} size={1} className='text-light' />
                 </div>
             </div>
