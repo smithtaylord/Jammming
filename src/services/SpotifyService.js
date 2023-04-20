@@ -1,3 +1,4 @@
+
 import { AppState } from "../AppState.js"
 import { Track } from "../models/Track.js";
 import { logger } from "../utils/Logger.js";
@@ -45,10 +46,10 @@ class SpotifyService {
 
         const index = AppState.searchResults.findIndex(t => t.id == track.id)
         AppState.searchResults.splice(index, 1)
-        logger.log(track)
+        // logger.log(track)
         AppState.playlist.push(track)
-        logger.log(AppState.playlist)
-        logger.log(AppState.searchResults, '[search results]')
+        // logger.log(AppState.playlist)
+        // logger.log(AppState.searchResults, '[search results]')
     }
 
 }
