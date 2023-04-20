@@ -9,7 +9,6 @@ export default function Track({ track }) {
     // const track = props.track
     function addToPlaylist() {
         spotifyService.addToPlaylist(track)
-
     }
 
     return (
