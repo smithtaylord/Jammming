@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Icon from '@mdi/react';
-import { mdiPlaylistMusic } from '@mdi/js';
 import { AppState } from "../AppState.js";
 import { observer } from 'mobx-react-lite';
 import Playlist from "./Playlist.jsx";
@@ -28,7 +26,14 @@ function Navbar() {
             <div className="dropdown">
               <button className="btn bg-primary position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span className="me-2">
-                  <Icon path={mdiPlaylistMusic} size={1} />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    style={{ width: '25px', height: '25px' }}>
+                    <title>playlist-music</title>
+                    <path d="M15,6H3V8H15V6M15,10H3V12H15V10M3,16H11V14H3V16M17,6V14.18C16.69,14.07 16.35,14 16,14A3,3 0 0,0 13,17A3,3 0 0,0 16,20A3,3 0 0,0 19,17V8H22V6H17Z" />
+                  </svg>
 
                 </span>
                 <span className="position-absolute top-0 end-0 pe-1 fw-bold text-info">{AppState.playlist.length}</span>
