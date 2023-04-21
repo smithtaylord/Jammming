@@ -66,6 +66,18 @@ class SpotifyService {
         AppState.playlist = updatedPlaylist
     }
 
+    async createPlaylist(playlistName) {
+        if (!AppState.accessToken) {
+            await this.getToken()
+        }
+        const accessToken = AppState.accessToken
+        const headers = { Authorization: `Bearer ${accessToken}` };
+        logger.log(accessToken, '[access token]')
+        logger.log(headers, '[headers]')
+        const res = await spotifyApi.get('/me', { headers })
+        logger.log(res.data)
+    }
+
 }
 
 export const spotifyService = new SpotifyService()

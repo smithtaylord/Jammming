@@ -6,6 +6,7 @@ import Pop from '../utils/Pop.js';
 import { logger } from '../utils/Logger.js';
 import { mdiSpotify } from '@mdi/js';
 import Icon from '@mdi/react'
+import { spotifyService } from '../services/SpotifyService.js';
 
 
 export default function Playlist({ tracks }) {
@@ -13,6 +14,7 @@ export default function Playlist({ tracks }) {
 
     const createPlaylist = async () => {
         try {
+            await spotifyService.createPlaylist(playlistName)
             logger.log(playlistName, '[playlist name]')
         }
         catch (error) {
