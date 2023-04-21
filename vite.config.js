@@ -8,7 +8,7 @@ export default defineConfig({
     outDir: 'docs',
     sourcemap: false,
   },
-  base: '/Jammming/',
+  base: '/Jammming',
   server: {
     port: 8080
   }
