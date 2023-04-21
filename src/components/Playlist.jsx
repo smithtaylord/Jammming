@@ -14,8 +14,7 @@ export default function Playlist({ tracks }) {
 
     const createPlaylist = async () => {
         try {
-            await spotifyService.createPlaylist(playlistName)
-            logger.log(playlistName, '[playlist name]')
+            Pop.spotify(`Unable to add ${playlistName}`)
         }
         catch (error) {
             Pop.error(error);
