@@ -14,14 +14,14 @@ function HomePage() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-10 col-md-6 offset-1">
-            <SearchResults
+            {/* <SearchResults
               // @ts-ignore
-              tracks={AppState.searchResults} />
+              tracks={AppState.searchResults} /> */}
           </div>
           <div className="d-none d-md-block col-md-4">
-            <Playlist
+            {/* <Playlist
               // @ts-ignore
-              tracks={AppState.playlist} />
+              tracks={AppState.playlist} /> */}
           </div>
         </div>
       </div>
