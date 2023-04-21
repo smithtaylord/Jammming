@@ -1,14 +1,13 @@
 /* eslint-disable react/prop-types */
-import React, { useEffect } from 'react';
+import React from 'react';
 import '../assets/scss/components/SearchResults.scss'
 import Tracklist from './Tracklist.jsx';
-import { AppState } from '../AppState.js';
-import { observer } from 'mobx-react';
-import { Track } from '../models/Track.js';
-import PropTypes from "prop-types"
+import { logger } from '../utils/Logger.js';
+
 
 
 export default function SearchResults({ tracks }) {
+
     // const searchResults = AppState.searchResults
     // useEffect(() => {
     //     //NOTE This will re-render the component whenever searchResults changes
