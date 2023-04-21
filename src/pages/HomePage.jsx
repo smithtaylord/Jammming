@@ -1,5 +1,4 @@
 import React from "react";
-import '../assets/scss/pages/HomePage.scss'
 import SearchBar from "../components/SearchBar.jsx";
 import SearchResults from "../components/SearchResults.jsx";
 import Playlist from "../components/Playlist.jsx";

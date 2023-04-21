@@ -11,9 +11,9 @@ class ObservableAppState {
   searchResults = []
   playlist = []
   accessToken = null
-  tokenType = null
-  expiresIn = 0
-  authState = 0
+  // tokenType = null
+  // expiresIn = 0
+  // authState = 0
 
   constructor() {
     makeAutoObservable(this)
