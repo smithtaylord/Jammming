@@ -6,7 +6,10 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'docs',
-    sourcemap: false
+    sourcemap: false,
+    rollupOptions: {
+      external: ['@popperjs/core']
+    }
   },
   base: '/Jammming/',
   server: {
