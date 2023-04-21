@@ -14,8 +14,7 @@ export default function Playlist({ tracks }) {
 
     const createPlaylist = async () => {
         try {
-            // Pop.spotify(`Unable to add ${playlistName}`)
-            logger.log('words')
+            Pop.spotify(`Unable to add ${playlistName}`)
         }
         catch (error) {
             Pop.error(error);
