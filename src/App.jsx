@@ -9,9 +9,9 @@ export function App() {
 
   return (
     <div className="App" id="app">
-      <header className='sticky-top'>
+      {/* <header className='sticky-top'>
         <Navbar />
-      </header>
+      </header> */}
 
       <main>
         <Outlet />
