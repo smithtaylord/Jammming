@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // import Icon from '@mdi/react'
 // import { AppState } from "../AppState.js";
 import { observer } from 'mobx-react-lite';
-// import Playlist from "./Playlist.jsx";
+import Playlist from "./Playlist.jsx";
 
 
 function Navbar() {
@@ -31,9 +31,9 @@ function Navbar() {
                 <span className="position-absolute top-0 end-0 pe-1 fw-bold text-info">{AppState.playlist.length}</span>
               </button> */}
               <ul className="dropdown-menu main-bg XL">
-                {/* <li><Playlist
+                <li><Playlist
                   // @ts-ignore
-                  tracks={AppState.playlist} /></li> */}
+                  tracks={AppState.playlist} /></li>
               </ul>
             </div>
           </div>
