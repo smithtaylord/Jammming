@@ -5,7 +5,7 @@ import SearchResults from "../components/SearchResults.jsx";
 import Playlist from "../components/Playlist.jsx";
 import { AppState } from "../AppState.js";
 import { observer } from 'mobx-react-lite';
-import { logger } from "../utils/Logger.js";
+
 
 
 function HomePage() {

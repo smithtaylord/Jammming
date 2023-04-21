@@ -1,12 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import '../assets/scss/components/Playlist.scss'
 import Tracklist from './Tracklist.jsx';
 import Pop from '../utils/Pop.js';
 import { mdiSpotify } from '@mdi/js';
 import Icon from '@mdi/react'
-import { logger } from '../utils/Logger.js';
-import { AppState } from '../AppState.js';
 
 
 
