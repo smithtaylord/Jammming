@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/scss/components/Tracklist.scss'
 import Track from './Track.jsx';
 import PropTypes from 'prop-types'
 

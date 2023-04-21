@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/scss/components/Track.scss'
 import { mdiPlus, mdiMinus } from '@mdi/js';
 import Icon from '@mdi/react'
 import { spotifyService } from '../services/SpotifyService.js';

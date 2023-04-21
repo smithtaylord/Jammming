@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import '../assets/scss/components/SearchBar.scss'
 import { spotifyService } from '../services/SpotifyService.js';
 import Pop from '../utils/Pop.js';
 

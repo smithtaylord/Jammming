@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/scss/components/SearchResults.scss'
 import Tracklist from './Tracklist.jsx';
 import PropTypes from 'prop-types';
 
