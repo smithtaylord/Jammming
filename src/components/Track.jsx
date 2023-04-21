@@ -1,6 +1,6 @@
 import React from 'react';
-import { mdiPlus, mdiMinus } from '@mdi/js';
-import Icon from '@mdi/react'
+// import { mdiPlus, mdiMinus } from '@mdi/js';
+// import Icon from '@mdi/react'
 import { spotifyService } from '../services/SpotifyService.js';
 import Pop from '../utils/Pop.js';
 import PropTypes from 'prop-types'
@@ -30,14 +30,14 @@ export default function Track({ track }) {
                         onClick={removeFromPlaylist}
                         className='selectable'
                         title='remove from playlist'>
-                        <Icon path={mdiMinus} size={1} className='text-light' />
+                        <div className='text-light fs-1'>-</div>
                     </div>
                 ) : (
                     <div
                         onClick={addToPlaylist}
                         className='selectable'
                         title='add to playlist'>
-                        <Icon path={mdiPlus} size={1} className='text-light' />
+                        <div className='text-light fs-1'>+</div>
                     </div>
                 )}
             </div>

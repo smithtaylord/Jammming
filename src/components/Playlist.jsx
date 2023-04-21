@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Tracklist from './Tracklist.jsx';
 import Pop from '../utils/Pop.js';
-import { mdiSpotify } from '@mdi/js';
-import Icon from '@mdi/react'
+// import { mdiSpotify } from '@mdi/js';
+// import Icon from '@mdi/react'
 import PropTypes from 'prop-types'
 import { logger } from '../utils/Logger.js';
 
@@ -40,7 +40,7 @@ export default function Playlist({ tracks }) {
                         <button
                             onClick={createPlaylist}
                             className='btn bg-success text-dark selectable border rounded-pill fs-3 px-4 py-2 fw-bold text-light'>
-                            <Icon path={mdiSpotify} size={2} className='me-4 mb-1 ' />
+                            {/* <Icon path={mdiSpotify} size={2} className='me-4 mb-1 ' /> */}
                             Add to Spotify</button>
                     </div>
                 </div >

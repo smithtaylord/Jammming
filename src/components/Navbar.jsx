@@ -27,7 +27,7 @@ function Navbar() {
           <div>
             <div className="dropdown">
               <button className="btn bg-primary position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {/* <span className="me-2"><Icon path={mdiPlaylistMusic} size={1} className='text-secondary' /></span> */}
+                <span className="me-2">@&@</span>
                 <span className="position-absolute top-0 end-0 pe-1 fw-bold text-info">{AppState.playlist.length}</span>
               </button>
               <ul className="dropdown-menu main-bg XL">
