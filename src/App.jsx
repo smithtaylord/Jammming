@@ -1,13 +1,15 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import { Navbar } from './components/Navbar.jsx'
+import Navbar from './components/Navbar.jsx'
+
+
 
 
 export function App() {
 
   return (
     <div className="App" id="app">
-      <header>
+      <header className='sticky-top'>
         <Navbar />
       </header>
 

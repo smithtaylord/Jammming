@@ -1,37 +1,47 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { mdiPlaylistMusic } from '@mdi/js';
+import Icon from '@mdi/react'
+import { AppState } from "../AppState.js";
+import { observer } from 'mobx-react-lite';
+import Playlist from "./Playlist.jsx";
 
-import Login from "./Login.jsx";
 
-export function Navbar() {
+function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-      <Link className="navbar-brand d-flex" to={''}>
-        <div className="d-flex flex-column align-items-center">
-          <h1 className="text-secondary">Ja<span className="text-info">mmm</span>ing</h1>
+    <nav >
+      <div className="d-none d-md-block bg-dark p-2 w-100 text-center">
+        <Link className="" to={''}>
+          <div className="">
+            <h1 className="text-secondary">Ja<span className="text-info">mmm</span>ing</h1>
+          </div>
+        </Link>
+      </div>
+      <div>
+        <div className="d-md-none bg-dark p-2 w-100 d-flex justify-content-between">
+          <div className="">
+            <Link className="" to={''}>
+              <h1 className="text-secondary">Ja<span className="text-info">mmm</span>ing</h1>
+            </Link>
+          </div>
+          <div>
+            <div className="dropdown">
+              <button className="btn bg-primary position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span className="me-2"><Icon path={mdiPlaylistMusic} size={1} className='text-secondary' /></span>
+                <span className="position-absolute top-0 end-0 pe-1 fw-bold text-info">{AppState.playlist.length}</span>
+              </button>
+              <ul className="dropdown-menu main-bg XL">
+                <li><Playlist
+                  // @ts-ignore
+                  tracks={AppState.playlist} /></li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </Link>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="navbarText">
-        <ul className="navbar-nav me-auto">
-          <li>
-            {/* <Link to={'About'} className="btn text-success lighten-30 selectable text-uppercase">
-              About
-            </Link> */}
-          </li>
-        </ul>
-        <Login />
-      </div >
+      </div>
+
     </nav >
   )
 }
+
+export default observer(Navbar)

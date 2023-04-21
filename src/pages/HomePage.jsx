@@ -13,12 +13,12 @@ function HomePage() {
       <SearchBar />
       <div className="container-fluid">
         <div className="row">
-          <div className="col-6 offset-1">
+          <div className="col-10 col-md-6 offset-1">
             <SearchResults
               // @ts-ignore
               tracks={AppState.searchResults} />
           </div>
-          <div className="col-4">
+          <div className="d-none d-md-block col-md-4">
             <Playlist
               // @ts-ignore
               tracks={AppState.playlist} />
