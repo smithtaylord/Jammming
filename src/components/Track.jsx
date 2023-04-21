@@ -5,6 +5,7 @@ import { mdiPlus, mdiMinus } from '@mdi/js';
 import Icon from '@mdi/react'
 import { spotifyService } from '../services/SpotifyService.js';
 import Pop from '../utils/Pop.js';
+import { logger } from '../utils/Logger.js';
 
 export default function Track({ track }) {
     // const track = props.track
