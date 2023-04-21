@@ -1,9 +1,10 @@
 import React from "react";
 import { useRouteError } from "react-router-dom";
 import '../assets/scss/pages/ErrorPage.scss';
+import { logger } from "../utils/Logger.js";
 export default function ErrorPage() {
   const error = useRouteError();
-  console.error(error);
+  logger.error(error);
 
   return (
     <div id="error-page" className="bg-dark text-light full-page">
