@@ -58,5 +58,7 @@ form:invalid button[type="submit"] {
 }
 
 .XL {
-  width: 90vw;
+  width: 95vw;
+  max-height: 80vh;
+  overflow: auto;
 }
