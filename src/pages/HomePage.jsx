@@ -15,13 +15,13 @@ function HomePage() {
         <div className="row">
           <div className="col-10 col-md-6 offset-1">
             <SearchResults
-              // @ts-ignore
-              tracks={AppState.searchResults} />
+            // @ts-ignore
+            />
           </div>
           <div className="d-none d-md-block col-md-4">
             <Playlist
-              // @ts-ignore
-              tracks={AppState.playlist} />
+            // @ts-ignore
+            />
           </div>
         </div>
       </div>
