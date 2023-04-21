@@ -10,8 +10,7 @@ import { spotifyService } from '../services/SpotifyService.js';
 import { AppState } from '../AppState.js';
 
 
-export default function Playlist() {
-    const tracks = AppState.playlist
+export default function Playlist({ tracks }) {
     const [playlistName, setPlaylistName] = useState('')
 
     const createPlaylist = async () => {

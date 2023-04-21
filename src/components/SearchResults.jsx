@@ -8,8 +8,7 @@ import { Track } from '../models/Track.js';
 import PropTypes from "prop-types"
 
 
-export default function SearchResults() {
-    const tracks = AppState.searchResults
+export default function SearchResults({ tracks }) {
     // const searchResults = AppState.searchResults
     // useEffect(() => {
     //     //NOTE This will re-render the component whenever searchResults changes
