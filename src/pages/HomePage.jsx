@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBar from "../components/SearchBar.jsx";
-import SearchResults from "../components/SearchResults.jsx";
-import Playlist from "../components/Playlist.jsx";
+// import SearchResults from "../components/SearchResults.jsx";
+// import Playlist from "../components/Playlist.jsx";
 import { AppState } from "../AppState.js";
 import { observer } from 'mobx-react-lite';
 

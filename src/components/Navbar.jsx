@@ -4,7 +4,7 @@ import { mdiPlaylistMusic } from '@mdi/js';
 import Icon from '@mdi/react'
 import { AppState } from "../AppState.js";
 import { observer } from 'mobx-react-lite';
-import Playlist from "./Playlist.jsx";
+// import Playlist from "./Playlist.jsx";
 
 
 function Navbar() {
