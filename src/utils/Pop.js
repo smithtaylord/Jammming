@@ -55,16 +55,16 @@ export default class Pop {
     })
   }
 
-  static spotify(title = 'Warning') {
-    Swal.fire({
-      title,
-      text: "Oops! It looks like the Spotify API and I aren't on the best terms at the moment, so unfortunately you won't be able to add these songs to your playlist. But thank you for visiting my site and interacting with it! I'm using this project to showcase my React skills, and I hope you've enjoyed your time here nonetheless. 😊",
-      imageUrl: 'https://images.unsplash.com/photo-1535696588143-945e1379f1b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      imageWidth: 400,
-      imageHeight: 300,
-      imageAlt: 'Custom image',
-    })
-  }
+  // static spotify(title = 'Warning') {
+  //   Swal.fire({
+  //     title,
+  //     text: "Oops! It looks like the Spotify API and I aren't on the best terms at the moment, so unfortunately you won't be able to add these songs to your playlist. But thank you for visiting my site and interacting with it! I'm using this project to showcase my React skills, and I hope you've enjoyed your time here nonetheless. 😊",
+  //     imageUrl: 'https://images.unsplash.com/photo-1535696588143-945e1379f1b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+  //     imageWidth: 400,
+  //     imageHeight: 300,
+  //     imageAlt: 'Custom image',
+  //   })
+  // }
 
   /**
    * @param {import('axios').AxiosError | Error | String } error An Error Object.
