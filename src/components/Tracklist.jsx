@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import '../assets/scss/components/Tracklist.scss'
 import Track from './Track.jsx';
-import { AppState } from '../AppState.js';
+import PropTypes from 'prop-types'
 
 export default function Tracklist({ tracks }) {
 
@@ -20,3 +19,7 @@ export default function Tracklist({ tracks }) {
     )
 
 }
+
+Tracklist.propTypes = {
+    tracks: PropTypes.array.isRequired
+};

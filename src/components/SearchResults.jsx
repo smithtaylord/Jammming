@@ -1,8 +1,7 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import '../assets/scss/components/SearchResults.scss'
 import Tracklist from './Tracklist.jsx';
-import { logger } from '../utils/Logger.js';
+import PropTypes from 'prop-types';
 
 
 
@@ -39,3 +38,6 @@ export default function SearchResults({ tracks }) {
 
 }
 // export default observer(SearchResults);
+SearchResults.propTypes = {
+    tracks: PropTypes.array.isRequired
+};

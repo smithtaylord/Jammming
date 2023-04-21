@@ -1,9 +1,9 @@
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import Tracklist from './Tracklist.jsx';
 import Pop from '../utils/Pop.js';
 import { mdiSpotify } from '@mdi/js';
 import Icon from '@mdi/react'
+import PropTypes from 'prop-types'
 
 
 
@@ -58,3 +58,6 @@ export default function Playlist({ tracks }) {
 
 }
 // export default observer(Playlist);
+Playlist.propTypes = {
+    tracks: PropTypes.array.isRequired
+};

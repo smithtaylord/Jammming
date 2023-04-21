@@ -1,11 +1,10 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import '../assets/scss/components/Track.scss'
 import { mdiPlus, mdiMinus } from '@mdi/js';
 import Icon from '@mdi/react'
 import { spotifyService } from '../services/SpotifyService.js';
 import Pop from '../utils/Pop.js';
-import { logger } from '../utils/Logger.js';
+import PropTypes from 'prop-types'
 
 export default function Track({ track }) {
     // const track = props.track
@@ -47,3 +46,7 @@ export default function Track({ track }) {
     )
 
 }
+
+Track.propTypes = {
+    track: PropTypes.object.isRequired
+};
