@@ -4,6 +4,7 @@ import Pop from '../utils/Pop.js';
 import { mdiSpotify } from '@mdi/js';
 import Icon from '@mdi/react'
 import PropTypes from 'prop-types'
+import { logger } from '../utils/Logger.js';
 
 
 
@@ -13,7 +14,8 @@ export default function Playlist({ tracks }) {
 
     const createPlaylist = async () => {
         try {
-            Pop.spotify(`Unable to add ${playlistName}`)
+            // Pop.spotify(`Unable to add ${playlistName}`)
+            logger.log('words')
         }
         catch (error) {
             Pop.error(error);
